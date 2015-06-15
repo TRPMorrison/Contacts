@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Contacts
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/vendor/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        CONTACTS
+      </h1>
+
+      <form id="Contact" name="Contact">
+        <fieldset>
+          <div>
+            <label class="label" for="name">NAME</label> <input id="name" name=
+            "name" size="36" type="text"> <label class="label" for=
+            "email">E-MAIL</label> <input id="email" name="email" size="36"
+            type="text"> <label class="label" for="phone">PHONE</label>
+            <input id="phone" name="phone" size="36" type="text">
+          </div>
+
+          <div>
+            <label class="label" for="socialMedia">FOLLOW YOU ON...</label>
+            <select class="social" id="social" name="social" title=
+            "Please choose a social media.">
+              <option value="">
+                --Please select one--
+              </option>
+              <option value="twitter">
+                Twitter
+              </option>
+              <option value="linkedin">
+                LinkedIn
+              </option>
+              <option value="instagram">
+                Instagram
+              </option>
+              <option value="facebook">
+                Facebook
+              </option>
+            </select> <button>SUBMIT</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <ul id="contacts">
+      </ul>
+    </div>
+    <!-- VENDOR -->
+    <script src="js/vendor/jquery.js"></script> <script src="js/vendor/underscore.js"></script> <script src="js/vendor/backbone.js"></script> <script src="js/vendor/handlebars.js"></script> <!-- TEMPLATES -->
+     <script src="js/templates.js"></script> <!-- MAIN -->
+     <script src="js/models/contact.model.js"></script> <script src="js/collections/contact.collections.js"></script> <script src="js/main.js"></script>
+  </body>
+</html>
