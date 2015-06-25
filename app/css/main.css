@@ -1,20 +1,45 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+* {
+  border: 1px solid red; }
+
 body {
-  padding: 100px; }
+  padding: 100px;
+  height: 100%;
+  background-color: #f3cc0c;
+  font-size: 12pt; }
 
-div {
-  padding-top: 20px;
-  height: 50px;
-  margin-left: 50px; }
+.sidebarWrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  overflow: hidden;
+  clear: both; }
+  .sidebarWrapper:last-child {
+    margin-right: 0; }
 
-input, #socialMedia {
+.container {
+  height: 100%; }
+
+input,
+#socialMedia {
   height: 40px;
   margin-left: 50px; }
 
-#linkedin, #twitter {
+#linkedin,
+#twitter {
   margin-left: 30px;
   margin-right: 40px; }
 
-#email, #phone {
+#email,
+#phone {
   margin-left: 20px;
   margin-right: 20px; }
 
@@ -25,7 +50,8 @@ button {
   letter-spacing: .2em;
   margin-top: 2em; }
 
-label, #socialMedia {
+label,
+#socialMedia {
   letter-spacing: .5em;
   font-weight: bold;
   font-size: 14pt;

@@ -6,3 +6,4 @@ var ContactsCollection = Backbone.Collection.extend({
   url: 'http://tiy-515.herokuapp.com/collections/trini-contact'
 
 });
+
