@@ -10,50 +10,32 @@ html {
   border: 1px solid red; }
 
 body {
-  padding: 100px;
+  padding: 50px;
   height: 100%;
   background-color: #f3cc0c;
   font-size: 12pt; }
 
-.sidebarWrapper {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  overflow: hidden;
-  clear: both; }
-  .sidebarWrapper:last-child {
-    margin-right: 0; }
-
 .container {
   height: 100%; }
 
-input,
-#socialMedia {
+fieldset {
+  margin-left: auto;
+  margin-right: auto; }
+
+input {
+  margin: 20px;
   height: 40px;
-  margin-left: 50px; }
-
-#linkedin,
-#twitter {
-  margin-left: 30px;
-  margin-right: 40px; }
-
-#email,
-#phone {
-  margin-left: 20px;
-  margin-right: 20px; }
+  border-radius: 30px;
+  text-align: center;
+  letter-spacing: .5em; }
 
 button {
   background-color: red;
   color: white;
-  width: 100px;
-  letter-spacing: .2em;
-  margin-top: 2em; }
-
-label,
-#socialMedia {
-  letter-spacing: .5em;
-  font-weight: bold;
-  font-size: 14pt;
-  margin-right: .3em;
-  margin-left: 2em; }
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 10pt;
+  margin-top: 2em;
+  float: right;
+  border-radius: 50%; }
