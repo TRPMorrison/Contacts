@@ -1,32 +1,27 @@
-var allContacts = new Contact();
+;(function() {
 
-allContacts.fetch().done( function () {
+    'use strict';
 
-
-  allContacts.each(function (model) {
-addContactToView(model.attributes);
-
-  });
-
-});
+    // Instance of our Collection
+    var allContacts = new Contact();
 
 
-var addContact = function (e) {
-
-  e.preventDefault();
-
-  var contactName = $(this).find('input').val();
-
-  var c = new Contact({
-    name: contactName,
-    email: emailAddress,
-    phone: phoneNumber,
-    twitter: twitterName,
-    linkedin: linkedinName
-  });
+    // Getting our data
+    allContacts.fetch().done(function() {
+        console.log(allContacts);
+    });
 
 
 
-// FORM SUBMIT LISTENER
-$('#addContact').on('submit', addContact);
+    $('#addContacts').on('submit', function(e) {
 
+        e.preventDefault();
+
+        var data = $(this).serialize();
+
+        $.post('http://tiy-515.herokuapp.com/collections/trini-contact', data);
+
+    });
+
+
+}());

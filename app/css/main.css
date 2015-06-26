@@ -12,8 +12,12 @@ html {
 body {
   padding: 50px;
   height: 100%;
-  background-color: #f3cc0c;
-  font-size: 12pt; }
+  background-color: #f3cc0c; }
+
+h1 {
+  font-family: Gruppo;
+  font-weight: 400;
+  text-align: center; }
 
 .container {
   height: 100%; }
@@ -27,7 +31,9 @@ input {
   height: 40px;
   border-radius: 30px;
   text-align: center;
-  letter-spacing: .5em; }
+  letter-spacing: .2em;
+  font-family: 'Roboto Mono';
+  font-weight: 100; }
 
 button {
   background-color: red;

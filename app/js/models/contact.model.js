@@ -1,18 +1,18 @@
-var Contact = Backbone.Model.extend({
+var Contact = Backbone.Model.extend ({
 
-  initialize: function(){
-  },
-
-  idAttribute: '_id',
-
-  defaults: {
-    firstName: '',
-    lastName: '',
+    defaults: {
+    name: '',
     email: '',
-    phoneNumber: '',
+    phone: '',
     twitter: '',
     linkedIn: ''
   },
 
+  idAttribute: "_id",
+
+  initialize: function () {
+    var name = this.get('name');
+    console.log( name );
+  }
 
 });

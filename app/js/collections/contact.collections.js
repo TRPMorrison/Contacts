@@ -1,9 +1,7 @@
-
-var ContactsCollection = Backbone.Collection.extend({
+var Contacts = Backbone.Collection.extend ({
 
   model: Contact,
 
-  url: 'http://tiy-515.herokuapp.com/collections/trini-contact'
+  url: "http://tiy-515.herokuapp.com/collections/trini-contact"
 
 });
-
